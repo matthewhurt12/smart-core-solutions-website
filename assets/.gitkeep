@@ -1,0 +1,7 @@
+# This file ensures the assets folder is tracked by git
+# Add your images here:
+# - og-image.png (1200x630) - Social sharing image
+# - matthew.jpg - Photo of Matthew for About section
+# - client-logos/ - Client logo images
+# - devices/ - Product/device photos
+

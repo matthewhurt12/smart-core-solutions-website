@@ -1,0 +1,12 @@
+# Local/system files
+.DS_Store
+Thumbs.db
+
+# Dependency folders if this static site is ever tested with Node tooling
+node_modules/
+
+# Local verification screenshots
+smartcore-desktop.png
+smartcore-mobile.png
+playwright-report/
+test-results/
