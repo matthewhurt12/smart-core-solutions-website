@@ -13,8 +13,8 @@
     --green: #15803d;
     --amber: #c27803;
     --navy: #10243f;
-    --shadow: 0 22px 55px rgba(20, 33, 61, 0.12);
-    --shadow-soft: 0 12px 30px rgba(20, 33, 61, 0.08);
+    --shadow: 0 18px 44px rgba(20, 33, 61, 0.11);
+    --shadow-soft: 0 8px 18px rgba(20, 33, 61, 0.06);
     --radius: 8px;
     --radius-sm: 6px;
     --container: 1180px;
@@ -439,7 +439,7 @@ textarea {
     padding: 0.45rem 0.65rem;
     background: #edf7f5;
     border: 1px solid #cce6e2;
-    border-radius: 999px;
+    border-radius: 4px;
     color: var(--teal-dark);
     font-size: 0.82rem;
     font-weight: 800;
@@ -497,13 +497,21 @@ textarea {
     background: var(--surface);
     border: 1px solid var(--line);
     border-radius: var(--radius);
-    box-shadow: var(--shadow-soft);
+    box-shadow: 0 1px 0 rgba(20, 33, 61, 0.04);
 }
 
 .service-card {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.service-card::before {
+    content: "";
+    display: block;
+    height: 4px;
+    background: linear-gradient(90deg, var(--teal), rgba(15, 143, 138, 0.18));
 }
 
 .service-card img {
@@ -511,6 +519,10 @@ textarea {
     height: 205px;
     object-fit: cover;
     background: var(--surface-alt);
+}
+
+.service-card:first-child img {
+    object-position: 64% 32%;
 }
 
 .service-body {
